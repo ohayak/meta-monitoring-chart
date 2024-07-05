@@ -19,12 +19,14 @@ data:
           path: /var/lib/grafana/dashboards/loki-1
         orgId: 1
         type: file
+{{- end }}
+{{- if .Values.dashboards.metrics.enabled }}
       - disableDeletion: true
         editable: false
-        folder: Loki
-        name: loki-2
+        folder: Mimir
+        name: mimir-1
         options:
-          path: /var/lib/grafana/dashboards/loki-2
+          path: /var/lib/grafana/dashboards/mimir-1
         orgId: 1
         type: file
 {{- end }}

@@ -277,9 +277,11 @@ metrics:
   - up
   # Additional metrics to retain
   extraMetrics: []
-# Set enabled = true to add the default logs dashboards to the local Grafana
+# Set enabled = true to add the default dashboards to the local Grafana
 dashboards:
   logs:
+    enabled: true
+  metrics:
     enabled: true
 kubeStateMetrics:
   # Scrape https://github.com/kubernetes/kube-state-metrics by default

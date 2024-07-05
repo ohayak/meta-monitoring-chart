@@ -14,4 +14,14 @@ data:
     {{ $.Files.Get "src/dashboards/loki-logs.json" | fromJson | toJson }}
   "loki-operational.json": |
     {{ $.Files.Get "src/dashboards/loki-operational.json" | fromJson | toJson }}
+  "loki-reads-resources.json": |
+    {{ $.Files.Get "src/dashboards/loki-reads-resources.json" | fromJson | toJson }}
+  "loki-reads.json": |
+    {{ $.Files.Get "src/dashboards/loki-reads.json" | fromJson | toJson }}
+  "loki-retention.json": |
+    {{ $.Files.Get "src/dashboards/loki-retention.json" | fromJson | toJson }}
+  "loki-writes-resources.json": |
+    {{ $.Files.Get "src/dashboards/loki-writes-resources.json" | fromJson | toJson }}
+  "loki-writes.json": |
+    {{ $.Files.Get "src/dashboards/loki-writes.json" | fromJson | toJson }}
 {{- end }}
